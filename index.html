@@ -3,9 +3,21 @@
   <head>
     <title>CSS Cheat sheet</title>
      <style> /*Separates presentation from styling */
+       
+       a {
+         text-decoration:none;
+         color: black
+       }
+       
+       
+       a:hover{
+         color: red
+       }
+       
+       
        .container{
          width: 80%; /*RWD*/
-        	margin: auto;
+        	margin: auto
 
          
        }
@@ -15,8 +27,18 @@
         background-color: blanchedalmond;
         font-family: sans-serif;
         font-size: 24px;
-        padding: 5px;
+        padding: 20px;
         border: 5px red solid;
+      }
+       
+              
+       
+       .box-2{  /* Will format all h1, if want to format specific one then need to give class*/
+        color: black; /* Property;value */
+        font-family: sans-serif;
+        margin: 20px;
+        padding: 20px;
+        border: 3px grey dotted;
       }
        
        p {
@@ -29,6 +51,27 @@
         	text-transform:uppercase;
          	letter-spacing: 0.1em;
          	word-spacing: 0.2em
+       }
+       
+       .categories{
+        border: 1px grey solid;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 15px
+       }
+       
+        .categories h2{
+				text-align: center
+       }
+       
+        .categories ul{  /*Targets the entire ul "box"*/
+				list-style: square; 
+       }
+       
+       .categories li{ /*The bullets themselves*/
+        padding-bottom: 5px;
+        border-bottom: dotted 1px grey;
+/*         list-style-image: url("flower1")  */
        }
        
 
@@ -47,7 +90,6 @@
       </p> 
       </div>
     </div>
-    <br>
     <div class="container">
       <div class="box-2">
       <h1 class="header2">
@@ -57,8 +99,39 @@
       <p>
        In this video I will cram as much as possible about CSS. We will be looking at styles, selectors, declarations, etc. We will build a CSS cheat sheet that you can keep as a resource and we will also create a basic website layout. We are using CSS3 but mostly the basics. I will be creating an advanced CSS course with animations,  etc. I do have a Flexbox in 20 minutes video as well if you want to learn flexbox.
       </p> 
+        
       </div>
-    
+      
+      <div>
+      <div class="categories">
+        <h2>
+         Categories
+        </h2>
+        	<ul>
+            <li> <a href="">Category 1</a></li>	
+						<li> <a href="">Category 2</a></li>
+          	<li> <a href="">Category 3</a></li>
+            <li> <a href="">Category 4</a></li>
+        	</ul> 
+      </div>
+        
+      <div class="form-group"> <!--Forms -->
+      	<div>
+          <label>Name: </label> 
+        	<input type="text" name="name"></input>  
+        </div>
+        <div>
+        	<label>Email: </label> 
+        	<input type="email" name="email"></input>
+      	</div>
+      	<div>
+        	<input class="button" type="submit"
+          value="Submit">
+          </input>
+          
+     		</div>
+      	
+      </div>
     
   </body>
 </html>
