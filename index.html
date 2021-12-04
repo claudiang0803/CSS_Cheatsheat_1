@@ -1,137 +1,257 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS Cheat sheet</title>
-     <style> /*Separates presentation from styling */
-       
-       a {
-         text-decoration:none;
-         color: black
-       }
-       
-       
-       a:hover{
-         color: red
-       }
-       
-       
-       .container{
-         width: 80%; /*RWD*/
-        	margin: auto
-
-         
-       }
-       
-       .box-1{  /* Will format all h1, if want to format specific one then need to give class*/
-        color: red; /* Property;value */
-        background-color: blanchedalmond;
-        font-family: sans-serif;
-        font-size: 24px;
-        padding: 20px;
-        border: 5px red solid;
+    <title>Temaki Sushi</title>
+    <style>
+      body{
+        background-color: #fbece3
       }
-       
-              
-       
-       .box-2{  /* Will format all h1, if want to format specific one then need to give class*/
-        color: black; /* Property;value */
-        font-family: sans-serif;
-        margin: 20px;
+        
+      .textbox{
+        color: #67b99f;
+        font-family: "Segoe UI";
+				text-align: center;
         padding: 20px;
-        border: 3px grey dotted;
+        position: relative;
+        margin-top: 1%;
+        margin-left: 2%;
+        border: 8px #67b99f solid;
+        width: 40%
+        
       }
-       
-       p {
-         font-size: 16px
-       }
-       
-       .header1{
-         font-style: italic;
-        	text-decoration:underline;
-        	text-transform:uppercase;
-         	letter-spacing: 0.1em;
-         	word-spacing: 0.2em
-       }
-       
-       .categories{
-        border: 1px grey solid;
-        margin: 20px;
-        padding: 10px;
-        border-radius: 15px
-       }
-       
-        .categories h2{
-				text-align: center
-       }
-       
-        .categories ul{  /*Targets the entire ul "box"*/
-				list-style: square; 
-       }
-       
-       .categories li{ /*The bullets themselves*/
-        padding-bottom: 5px;
-        border-bottom: dotted 1px grey;
-/*         list-style-image: url("flower1")  */
-       }
-       
+      .sushi-roll{
+        width:500px;
+        height:500px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%
+      }
+      
+      .seaweed{
+      	background: #7a7b75;
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        border-radius: 46% 47% 63% 41% / 43% 55% 45% 57%; 
+        border: 8px #685f59 solid;
+      }
+      
+      .rice{
+        background: #fdfffe;
+        position: absolute;
+        z-index:1;
+        width: 400px;
+        height: 360px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      
+      .topping{
+        border: 8px #685f59 solid;     
+      }
+      .cucumber-stick{
+        background: #67b99f;
+        position: absolute;
+        z-index:2;
+        width: 100px;
+        height: 100px;
+        margin-top: 200px;
+        margin-left: 210px;
+        border-radius: 44% 44% 50% 56% / 37% 47% 62% 38%  
+      }
+      
+      .crab{
+        background: #f7a87a;
+        position: absolute;
+        z-index:3;
+        width: 100px;
+        height: 100px;
+        margin-top: 200px;
+        margin-left: 110px;
+        border-radius: 44% 44% 50% 56% / 37% 47% 62% 38%  
+      }
+      
+      .tamago{
+        background: #e8dd9f;
+        position: absolute;
+        z-index:3;
+        width: 110px;
+        height: 90px;
+        margin-top: 120px;
+        margin-left: 150px;
+        border-radius: 44% 44% 50% 43% / 37% 47% 62% 38% 
+      }
+      
+      .ikura{
+        background: #ec6f5d;
+        position: absolute;
+        z-index:4;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%
+      }
+      
+      .ikura1{
+        margin-top: -20px;
+        margin-left: 165px;
+      }
+      
+      .ikura2{
+        margin-top: -20px;
+        margin-left:215px;
+      }
+    
+      .ikura3{
+        margin-top: -65px;
+        margin-left:190px;
+      }
 
-    </style>
+      .bottom{
+        width:70%;
+        height:70%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7%;
+
+      }
+      
+      .bar{
+      	background: #685f59;
+        margin-top: 25px;
+        width: 100%;
+        height: 1%;
+        position: absolute
+      }
+      
+      
+      .circles{
+        border: 8px #685f59 solid;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: 0px; 
+        z-index: 2;
+        width: 50px;
+        height: 50px;
+        transition-property: width height border-radius
+      											margin-left margin-top z-index;
+        transition-duration: .5s;
+      }
+      
+      .circles:hover{
+        width: 100%;
+        height: 50%;
+        border-radius: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -10px;
+        z-index: 3;
+      }
+      
+      
+      .circle1{
+        margin-left: -0.1%;
+        background: #67b99f;
+      }
+      
+      
+      
+      .circle1:hover{
+        
+      }
+      
+      .overlay{
+        font-family: "Segoe UI";
+				text-align: center;
+        margin-top: auto;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0)
+      }
+
+      
+			
+
+
+      
+      
+      .circle2{
+        background: #fdfffe;
+        margin-left: 24%
+      }
+      
+      .circle3{
+        background: #f7a87a;
+        margin-left: 49%
+      }
+      
+      .circle4{
+        background: #e8dd9f;
+        margin-left: 74%
+          
+      }
+      
+      .circle5{
+        background: #ec6f5d;
+        margin-left: 96%
+          
+      }
+      
+  
+  </style>
   </head>
   
+  
   <body>
-    <div class="container">
-      <div class="box-1">
-      <h1 class="header1">
-       Hello World
-      </h1> 
-
-      <p>
-       In this video I will cram as much as possible about CSS. We will be looking at styles, selectors, declarations, etc. We will build a CSS cheat sheet that you can keep as a resource and we will also create a basic website layout. We are using CSS3 but mostly the basics. I will be creating an advanced CSS course with animations,  etc. I do have a Flexbox in 20 minutes video as well if you want to learn flexbox.
-      </p> 
+    <div class="textbox">
+      <h1>
+      ANATOMY OF TEMAKI
+    	</h1>
+    </div> 
+    
+    <div class="sushi-roll">
+      <div class="seaweed">
+      </div>
+      <div class="seaweed rice">
+      </div>
+      <div class="topping cucumber-stick"> 
+      </div>
+      <div class="topping crab"> 
+      </div>
+      <div class="topping tamago"> 
+      </div>
+      <div class="topping ikura ikura1"> 
+      </div>
+      <div class="topping ikura ikura2"> 
+      </div>
+      <div class="topping ikura ikura3"> 
       </div>
     </div>
-    <div class="container">
-      <div class="box-2">
-      <h1 class="header2">
-       Hello World
-      </h1> 
-
-      <p>
-       In this video I will cram as much as possible about CSS. We will be looking at styles, selectors, declarations, etc. We will build a CSS cheat sheet that you can keep as a resource and we will also create a basic website layout. We are using CSS3 but mostly the basics. I will be creating an advanced CSS course with animations,  etc. I do have a Flexbox in 20 minutes video as well if you want to learn flexbox.
-      </p> 
-        
-      </div>
+    
+    <div class="bottom">
+      <div class="bottom bar"></div>
+      <div class="circles circle1">
       
-      <div>
-      <div class="categories">
-        <h2>
-         Categories
+      </div>
+      <div class="circles circle2"></div>
+      <div class="circles circle3"></div>      
+      <div class="circles circle4"></div>
+      <div class="circles circle5"></div>
+    	<div class = "bottom overlay">
+      	<h2>
+        CUCUMBER
         </h2>
-        	<ul>
-            <li> <a href="">Category 1</a></li>	
-						<li> <a href="">Category 2</a></li>
-          	<li> <a href="">Category 3</a></li>
-            <li> <a href="">Category 4</a></li>
-        	</ul> 
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero urna, feugiat a ligula in, blandit pellentesque dui. Sed turpis neque, gravida nec lectus ac, consectetur fringilla dui. Nulla non mauris eros. Maecenas semper neque ac dolor sodales tempor. Quisque tempus vel ligula non rutrum. Curabitur placerat, ante et feugiat viverra, sem diam vehicula eros, eget molestie mi nisi eget mauris. Maecenas vehicula nisl non lacinia viverra. Fusce accumsan lorem ex, et vehicula nisi mattis ut. Suspendisse tempus tristique tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pharetra erat in justo porttitor, at cursus sapien luctus. Donec finibus arcu lorem, ut maximus orci sagittis tempor. Nam tincidunt risus dolor, ut bibendum justo eleifend eu. Etiam consequat accumsan augue non rutrum. Praesent consectetur erat non erat finibus semper. Aenean consectetur quis mauris ultricies auctor.</div>
+      	</p>
       </div>
-        
-      <div class="form-group"> <!--Forms -->
-      	<div>
-          <label>Name: </label> 
-        	<input type="text" name="name"> 
-        </div>
-        <div>
-        	<label>Email: </label> 
-        	<input type="email" name="email">
-      	</div>
-      	<div>
-        	<input class="button" type="submit"
-          value="Submit">
-          
-     		</div>
-      	
-      </div>
+                 
+    
+
+
     
   </body>
-</html>
+  
+  
 
+</html>
